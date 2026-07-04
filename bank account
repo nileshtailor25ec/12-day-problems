@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+class BankAccount {
+    float balance = 0;
+public:
+    void deposit(float amt) { balance += amt; }
+    void withdraw(float amt) { balance -= amt; }
+    void display() { cout << "Final Balance: " << balance << endl; }
+};
+int main() {
+    BankAccount b;
+    b.deposit(1000);
+    b.withdraw(200);
+    b.display();
+    return 0;
+}
+
+Result-Final Balance: 800
