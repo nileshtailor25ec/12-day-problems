@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class student
+{
+public:
+int rollno;
+char name[20];
+double marks;
+void get()
+{
+cout << "enter the student name ,roll no and marks:";
+cin >> name >> rollno >> marks;
+}
+void display()
+{
+cout << "name:" << name << "rollno:" << rollno << "marks:" << marks;
+}};
+int main()
+{
+student s1;
+s1.get();
+s1.display();
+return 0;
+}
+
+Result-enter the student name, roll no and marks:nilesh
+72
+85.83
+name:nilesh roll no:72 marks:85.83
