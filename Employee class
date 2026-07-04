@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Employee 
+{private:
+string name;
+int id;
+public:
+Employee(string n, int i) : name(n), id(i) {}
+void display() {
+cout << "Employee: " << name << " (ID: " << id << ")" << endl;
+}
+};
+int main() {
+    Employee e("Rahul", 101);
+    e.display();
+    return 0;
+}
+
+Result-employee :rahul id: 101
